@@ -1,10 +1,12 @@
 # Pulsesync-Patches
 
 ## Установка
-cd `ваша директория куда скачаны эти файлы`
+```cmd
+cd *ваша директория куда скачаны эти файлы*
 node patch-vibe-colors.js
 node unlock-premium.js
 node sync-pulsesync-state.js --force
+```
 
 ## Больше информации
 [Pulsesync](https://github.com/PulseSync-LLC/PulseSync-client)
