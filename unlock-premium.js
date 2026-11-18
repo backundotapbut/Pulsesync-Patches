@@ -38,7 +38,8 @@ const log = {
 };
 
 // ---------------------------------------------------------------------------
-// Патчи установленного app.asar (минифицированные файлы версии 2.1.4)
+// Патчи установленного app.asar (минифицированные файлы версии 2.1.4+)
+// В 2.2.1 минифицированное имя моста сменилось с Ms() на ai().
 // ---------------------------------------------------------------------------
 
 const INSTALLED_PATCHES = [
@@ -61,7 +62,7 @@ const INSTALLED_PATCHES = [
         required: true,
         replacements: [
             {
-                from: 'getPremiumStatus:async()=>!!await Ms().app.isPremiumUser()',
+                from: 'getPremiumStatus:async()=>!!await ai().app.isPremiumUser()',
                 to: 'getPremiumStatus:async()=>!0',
             },
         ],
